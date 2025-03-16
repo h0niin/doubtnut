@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doubtnut Bypass</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.doubtnut.com/wp-content/uploads/2023/04/cropped-d-logo.png" type="image/x-icon">
+    
     <style>
         body {
             background-color: #1d1f24;
@@ -165,6 +167,9 @@
         a:active {
             color: #ffffff; /* Clicked */
         }
+        p {
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -179,14 +184,12 @@
                 <span class="label-char" style="--index: 2">URL:&nbsp;</span>
             </label>
         </div>
-
         <button id="fetchButton">
           Get Video 🤫
         </button>
-<p>OR Copy<a href="javascript:fetch('https://gist.githubusercontent.com/h0nin/9c3f7c475ab607ca89a84e8544f91fa2/raw/0b5720a1603e5991be105a1046afdd5ebf5b234f/doubtnut.js').then(r=>r.text()).then(eval)"> ME 🔖</a>and Add to Bookmark</p>
+        <p>or Add<a href="javascript:fetch('https://gist.githubusercontent.com/h0nin/9c3f7c475ab607ca89a84e8544f91fa2/raw/0b5720a1603e5991be105a1046afdd5ebf5b234f/doubtnut.js').then(r=>r.text()).then(eval)"> ME 🔖</a> to Bookmark | <a href="https://github.com/h0nin/doubtnut/#how-to-use-the-bookmark" target="_blank">Tutorial 📖</a>
+        </p>
     </div>
-    <div id="output" class="output"></div>
-
     <script>
         document.getElementById('fetchButton').addEventListener('click', () => {
             const inputUrl = document.getElementById('grade').value;
