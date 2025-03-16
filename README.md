@@ -13,7 +13,7 @@ javascript:fetch('https://gist.githubusercontent.com/h0nin/9c3f7c475ab607ca89a84
 
 ...or copy it directly from the [website](https://doubthunt.vercel.app/).
 
-![Copy link address](https://i.imgur.com/ZMnIPMo.png)
+![](https://i.imgur.com/HBav9QI.png)
 
 ---
 
@@ -23,7 +23,7 @@ javascript:fetch('https://gist.githubusercontent.com/h0nin/9c3f7c475ab607ca89a84
 2. Click on "Add Page" or "Add Bookmark."
 3. Paste the copied link into the **URL** field:
 
-![Add to Bookmark](https://i.imgur.com/w8SbqoY.png)
+![](https://i.imgur.com/w8SbqoY.png)
 
 ---
 
@@ -31,7 +31,7 @@ javascript:fetch('https://gist.githubusercontent.com/h0nin/9c3f7c475ab607ca89a84
 
 While you are on the Doubtnut website, click the bookmark you just created:
 
-![Click Bookmark](https://i.imgur.com/Yr1Tqpa.png) 
+![](https://i.imgur.com/Yr1Tqpa.png) 
 
 ---
 
@@ -39,7 +39,7 @@ While you are on the Doubtnut website, click the bookmark you just created:
 
 Watch the video solution and continue your grind! 🙌🏻
 
-![Success](https://i.imgur.com/XLZCMCB.png)
+![](https://i.imgur.com/XLZCMCB.png)
 
 ---
 
