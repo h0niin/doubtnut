@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubtnut Bypass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1d1f24;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+            min-height: 100vh;
+            margin: 0;
+            color: #f5f5f5;
+            text-align: center; 
+            overflow-y: auto;
+        }
+        .container {
+            margin: 100px auto 0;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            padding-bottom: 69px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s;
+            max-width: 33%; 
+            width: 100%; 
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+
+        .wave-group {
+            position: relative;
+            margin: auto auto 20px;
+        }
+
+        .wave-group .input {
+            font-size: 20px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 200px;
+            border: none;
+            border-bottom: 1px solid #515151;
+            background: transparent;
+            color: #fddeff;
+        }
+
+        .wave-group .input:focus {
+            outline: none;
+            color: #fddeff;
+        }
+
+        .wave-group .label {
+            color: #fddeff;
+            font-size: 15px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            display: flex;
+        }
+
+        .wave-group .label-char {
+            transition: 0.2s ease all;
+            transition-delay: calc(var(--index) * .05s);
+        }
+
+        .wave-group .input:focus ~ label .label-char,
+        .wave-group .input:valid ~ label .label-char {
+            transform: translateY(-20px);
+            font-size: 14px;
+            color: #fec195;
+        }
+
+        .wave-group .bar {
+            position: relative;
+            display: block;
+            width: 200px;
+        }
+
+        .wave-group .bar:before, .wave-group .bar:after {
+            content: '';
+            height: 2px;
+            width: 0;
+            bottom: 1px;
+            position: absolute;
+            background: #fec195;
+            transition: 0.2s ease all;
+        }
+
+        .wave-group .bar:before {
+            left: 50%;
+        }
+
+        .wave-group .bar:after {
+            right: 50%;
+        }
+
+        .wave-group .input:focus ~ .bar:before,
+        .wave-group .input:focus ~ .bar:after {
+            width: 50%;
+        }
+
+        button {
+            position: relative;
+            padding: 12px 35px;
+            background: #fec195;
+            font-size: 17px;
+            font-weight: 500;
+            color: #181818;
+            border: 3px solid #fec195;
+            border-radius: 8px;
+            box-shadow: 0 0 0 #fec1958c;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: transparent;
+            color: #fec195;
+            box-shadow: 0 0 25px #fec1958c;
+        }
+
+        .output {
+            margin-top: 20px;
+            color: #fec195;
+            font-size: 1.2rem;
+        }
+        /* Link styles */
+        a {
+            color: #fec195; /* Default */
+            text-decoration: none; 
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #fec195; /* Visited */
+        }
+
+        a:hover {
+            color: #b18668; /* Hovered */
+        }
+
+        a:active {
+            color: #ffffff; /* Clicked */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Doubtnut Bypass <span style="font-size: 0.5em;">2024-25</span></h1>
+        <div class="wave-group">
+            <input type="text" id="grade" required="" class="input">
+            <span class="bar"></span>
+            <label class="label">
+                <span class="label-char" style="--index: 0">Enter&nbsp;</span>
+                <span class="label-char" style="--index: 1">Doubtnut&nbsp;</span>
+                <span class="label-char" style="--index: 2">URL:&nbsp;</span>
+            </label>
+        </div>
+
+        <button id="fetchButton">
+          Get Video 🤫
+        </button>
+<p>OR Copy<a href="javascript:fetch('https://gist.githubusercontent.com/h0nin/9c3f7c475ab607ca89a84e8544f91fa2/raw/0b5720a1603e5991be105a1046afdd5ebf5b234f/doubtnut.js').then(r=>r.text()).then(eval)"> ME 🔖</a>and Add to Bookmark</p>
+    </div>
+    <div id="output" class="output"></div>
+
+    <script>
+        document.getElementById('fetchButton').addEventListener('click', () => {
+            const inputUrl = document.getElementById('grade').value;
+
+            if (!inputUrl) {
+                alert('😑 Please enter a valid URL.');
+                return;
+            }
+
+            fetch(inputUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(htmlText => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(htmlText, "text/html");
+                    const nextDataScript = doc.querySelector('script[type="application/json"]');
+
+                    if (nextDataScript) {
+                        const nextData = JSON.parse(nextDataScript.innerText);
+                        const videoName = nextData.props.pageProps.videoData.video_name;
+
+                        if (videoName) {
+                            const ulr = "https://videos.doubtnut.com/" + videoName + "?_thank_me_later_:)";
+                            window.open(ulr, "_blank");
+                        } else {
+                            alert("☹ Video not found");
+                        }
+                    } else {
+                        alert("☹ Code has become outdated.");
+                    }
+                })
+                .catch(error => {
+                    alert('👀 Error: ' + error.message);
+                });
+        });
+    </script>
+</body>
+</html>
