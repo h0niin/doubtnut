@@ -1,4 +1,4 @@
-# How to Use the Bookmark?
+# Bypass Doubtnut Premium Videos
 
 As an alternative to copying and pasting the link, you can use a Bookmark.
 
