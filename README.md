@@ -1,4 +1,4 @@
-# Bypass Doubtnut Premium Videos
+# Bypass Doubtnut Premium Videos [DISCONTINUED]
 
 As an alternative to copying and pasting the link, you can use a Bookmark.
 
